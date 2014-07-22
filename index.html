@@ -14,9 +14,14 @@
 
   <!-- BACKBONE FILES -->
   <script type="text/javascript" src="javascripts/backbone/models/taskModel.js"></script>
-  <script type="text/javascript" src="javascripts/backbone/views/taskstaskView.js"></script>
-  <script type="text/javascript" src="javascripts/backbone/views/taskstaskListView.js"></script>
+  <script type="text/javascript" src="javascripts/backbone/views/tasks/taskView.js"></script>
+  <script type="text/javascript" src="javascripts/backbone/views/tasks/taskListView.js"></script>
   <script type="text/javascript" src="javascripts/backbone/collections/taskCollection.js"></script>
+
+  <!-- TEMPLATE -->
+  <script type="text/template" id="task-template">
+  <h3><%- task.name %> <span><button data-action="delete">Completed</button></span></h3>
+  </script>
 
   <!-- APP -->
   <script type="text/javascript" src="javascripts/app.js"></script>
