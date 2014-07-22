@@ -16,6 +16,6 @@ ToDoList.Views.TaskView = Backbone.View.extend({
     'click [data-action="delete"]': 'markAsComplete'
   },
   markAsComplete: function() {
-    this.$el.css('text-decoration', 'line-through')
+    this.model.destroy();
   }
 })
