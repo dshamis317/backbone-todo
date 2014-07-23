@@ -11,7 +11,8 @@ ToDoList.Views.TaskView = Backbone.View.extend({
     var renderedHTML = this.template({task: this.model.toJSON()});
     this.$el.html(renderedHTML);
     if (this.model.get('completed') === true) {
-      this.$el.css('text-decoration', 'line-through')
+      this.$el.css('text-decoration', 'line-through');
+      this.el.firstChild.nextSibling.lastElementChild.firstChild.innerHTML = 'Not Complete';
     }
     return this;
   },
